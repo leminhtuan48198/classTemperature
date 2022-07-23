@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        doC;
+
+        constructor(doC) {
+            this.doC = doC;
+        }
+        convertK(){
+            return this.doC+273.15
+        }
+        convertF(){
+            return this.doC*1.8+32
+        }
+    }
+    let myTemperature=new Temperature(25)
+    document.write("gia tri do K la: "+myTemperature.convertK()+"<br>")
+    document.write("gia tri do F la: "+myTemperature.convertF())
+</script>
+</body>
+</html>
